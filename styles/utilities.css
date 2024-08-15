@@ -1,0 +1,49 @@
+.container {
+  max-width: 1280px;
+  margin-inline: auto;
+}
+
+.grid {
+  display: grid;
+}
+
+.grid-flow-col {
+  grid-auto-flow: column;
+}
+
+.grid-col-2 {
+  grid-template-columns: repeat(2, 1fr);
+}
+
+.gap-16 {
+  gap: 16px;
+}
+
+.text-2xl {
+  font: var(--h1);
+}
+
+.text-xl {
+  font: var(--h2);
+}
+
+.text-lg {
+  font: var(--h3);
+}
+
+.text-sm {
+  font: var(--text-sm);
+}
+
+.tag {
+  display: inline-block;
+  padding: 4px 8px;
+  font: var(--tag);
+  text-transform: uppercase;
+  border-radius: 4px;
+  background-color: var(--brand-color-dark);
+  letter-spacing: 0.04em;
+  margin-bottom: 8px;
+  color: var(--text-color-primary);
+  box-shadow: 0 4px 16px rgba(2, 6, 23, 0.251);
+}
