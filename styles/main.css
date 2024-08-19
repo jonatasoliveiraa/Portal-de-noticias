@@ -1,5 +1,5 @@
 main {
-  margin-top: 40px;
+  margin-block: 40px;
   padding-inline: 32px;
   gap: 80px;
 }
@@ -10,8 +10,8 @@ section header {
   font: var(--span);
 
   a {
-    justify-self: end;
     align-items: center;
+    justify-self: end;
     gap: 8px;
 
     span {
@@ -71,6 +71,33 @@ section header {
         display: inline-block;
         margin-top: 8px;
         padding-bottom: 24px;
+      }
+    }
+  }
+}
+
+#news {
+  grid-template-columns: 1fr 40%;
+  article {
+    img {
+      width: 176px;
+    }
+    h2 {
+      margin-bottom: 4px;
+    }
+    p {
+      color: var(--text-color-secondary);
+    }
+  }
+
+  aside {
+    img {
+      border-radius: 4px;
+    }
+    article {
+      img {
+        width: 72px;
+        height: 72px;
       }
     }
   }
